@@ -1,41 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nelson Andrade</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-</head>
-<body>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/script.js" defer></script>
+
+    <!-- Bootstrap CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- Devicon library -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+
+    <!-- import Friconix -->
+    <script defer src="https://friconix.com/cdn/friconix.js"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar component -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-          </ul>
+      <a class="navbar-brand" href="#">Nelson Andrade</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+        </ul>
+      </div>
+
+      <button onclick="changeBackgroundColor()" class="icon-button">
+        <img src="assets/icon.jpeg" alt="" class="icon" />
+      </button>
+    </nav>
+
+    <!-- Header section -->
+    <header>
+      <div class="row">
+        <div class="col-md-6 main">
+          <!-- Headshot image -->
+          <img
+            src="assets/IMG_5709.jpg"
+            alt="Memoji headshot of Nelson Andrade"
+            class="memoji"
+          />
         </div>
-      </nav>
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script></body>
+        <div class="col-md-6 main">
+          <!-- Header Intro Section -->
+          <p class="header-intro">
+            Full Stack Developer passionate about creating beautiful and
+            functional web applications.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Me section -->
+    <section class="about" id="about">
+      <div class="row">
+        <div class="col-md-6">
+          <!-- About me-->
+          <h1>About Me</h1>
+          <div class="about-desc">
+            <p>
+              Hi my name is Nelson and I am a first generation college graduate
+              from Bowdoin College in Brunswick, Maine with a major in computer
+              science and minor in sociology and am now a software engineer with
+              backend experience but have worked with frontend and enjoy working
+              with all layers of the stack. I'm constantly learning and adapting
+              to new technologies to deliver the best solutions for my clients.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!-- Skills Icons-->
+          <h1>Skills</h1>
+          <!-- 3x3 grid layout -->
+          <div class="row skills">
+            <div class="col-md-4">
+              <i class="devicon-python-plain"></i>
+            </div>
+            <div class="col-md-4">
+              <i class="devicon-bootstrap-plain"></i>
+            </div>
+            <div class="col-md-4">
+              <i class="devicon-react-plain"></i>
+            </div>
+          </div>
+          <!-- Second row of skills -->
+          <div class="row skills">
+            <div class="col-md-4">
+              <i class="devicon-java-plain-wordmark"></i>
+            </div>
+            <div class="col-md-4">
+              <i class="devicon-amazonwebservices-plain"></i>
+            </div>
+            <div class="col-md-4">
+              <i class="devicon-azuresqldatabase-plain"></i>
+            </div>
+          </div>
+
+          <!-- Third row of skills -->
+          <div class="row skills">
+            <div class="col-md-4">
+              <i class="devicon-html5-plain-wordmark"></i>
+            </div>
+            <div class="col-md-4">
+              <i class="devicon-css3-plain-wordmark"></i>
+            </div>
+            <div class="col-md-4">
+              <i class="devicon-pandas-plain-wordmark"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+      <!-- 1x3 grid layout -->
+      <h1>Projects</h1>
+      <div class="row text">
+        <div class="col-md-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem">
+            <img
+              src="assets/website.png"
+              class="card-img-top fixed-size-img"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Web App Portfolio</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Repository</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem">
+            <img
+              src="assets/flask_api.png"
+              class="card-img-top fixed-size-img"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Flask API</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Repository</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem">
+            <img
+              src="assets/flask_api.png"
+              class="card-img-top fixed-size-img"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Flask API</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Repository</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact">
+      <h1>Contact</h1>
+
+      <!-- Input #1: User's Name -->
+      <div class="input-group input-group-lg">
+        <i class="fi-xnsuxl-user-solid friconix"></i>
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-lg"
+          placeholder="Full name"
+        />
+      </div>
+
+      <!-- Input #2: Email -->
+      <div class="input-group input-group-lg">
+        <!-- Friconix Email Icon -->
+        <i class="fi-xwsuxl-envelope-solid friconix"></i>
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-lg"
+          placeholder="Email"
+        />
+      </div>
+
+      <!-- Textarea field using Bootstrap Input Group -->
+      <div class="input-group">
+        <textarea
+          cols="80"
+          rows="6"
+          class="form-control"
+          placeholder="Your Message"
+        ></textarea>
+      </div>
+
+      <!-- Bootstrap Submit Button -->
+      <button type="button" class="btn btn-primary">Submit Your Message</button>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="suscribegroup">
+        <a href="https://x.com/i/flow/login"
+          ><i class="fi-snsuxl-github"></i
+        ></a>
+        <a href="https://x.com/i/flow/login"
+          ><i class="fi-snsuxl-linkedin"></i
+        ></a>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -1,0 +1,146 @@
+body {
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  font-family: "Roboto", serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+
+.background-change {
+  background: linear-gradient(to right, #29323c, #485563);
+  color: white;
+}
+
+.text {
+  color: black;
+}
+
+ul {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+}
+
+.icon-button {
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+.icon-button:focus {
+  outline: none;
+}
+
+.icon {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.main {
+  display: flex; /* Flexbox needed here */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100vh; /* Ensures div takes the full height of the viewport */
+}
+
+.memoji {
+  border-radius: 50%;
+}
+
+.header-intro {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* About Section */
+.about {
+  text-align: center;
+}
+
+.about-desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  padding: 20px;
+  margin: 25px;
+}
+
+i {
+  font-size: 65px;
+  text-shadow: 0 0 15px rgb(254, 155, 26);
+}
+
+.skills {
+  padding: 15px;
+}
+
+/* Projects section */
+.projects {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.fixed-size-img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Contact section */
+.contact {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.contact .input-group {
+  margin-bottom: 15px;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.contact i {
+  /* Adjust size and position of icon */
+  font-size: 15px;
+  padding: 15px;
+
+  /* Icon Color */
+  color: #ffffff;
+  background-color: #5bc0de;
+
+  border-radius: 10%;
+}
+
+/* .contact .btn {
+    border-radius: 25%;
+    width: 20%;
+    font-size: 15px;
+    background-color: #f08080;
+    color: #ffffff;
+    padding: 20px;
+ } */
+
+/* .contact .btn:hover {
+    background-color: #a85959 !important;
+    color: #ffffff !important;
+    padding: 25px;
+ } */
+
+.submit {
+  color: green;
+}
+
+/* Footer section */
+.footer {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.footer i {
+  padding: 15px 10px;
+  font-size: 30px;
+}
