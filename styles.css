@@ -7,7 +7,7 @@ body {
 
 .background-change {
   background: linear-gradient(to right, #29323c, #485563);
-  color: white;
+  color: white !important;
 }
 
 .text {
@@ -18,6 +18,23 @@ ul {
   margin-left: auto;
   margin-right: auto;
   font-size: 20px;
+}
+
+#resumeBtn {
+  background-color: rgba(129, 12, 129, 0.5);
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 25px;
+  margin-right: 7px;
+  font-size: 17px;
+  border: none;
+  outline: none;
+}
+
+#resumeBtn:hover {
+  background-color: rgba(129, 12, 129, 0.7);
 }
 
 .icon-button {
@@ -72,65 +89,68 @@ i {
 }
 
 .skills {
-  padding: 15px;
+  padding: 10px;
+  margin: 30px;
 }
 
 /* Projects section */
 .projects {
   text-align: center;
-  margin-top: 30px;
+}
+
+.projects h1,
+.contact h1,
+.about h1 {
+  margin-top: 70px;
+  margin-bottom: 30px;
 }
 
 .fixed-size-img {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 200px;
   object-fit: cover;
+  border-radius: 10px;
+}
+
+.projects .btn {
+  background-color: #5bc0de;
+  color: white;
 }
 
 /* Contact section */
 .contact {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .contact .input-group {
-  margin-bottom: 15px;
+  margin: 25px;
   width: 70%;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 25px;
 }
 
 .contact i {
-  /* Adjust size and position of icon */
   font-size: 15px;
-  padding: 15px;
-
-  /* Icon Color */
+  padding: 12px;
   color: #ffffff;
   background-color: #5bc0de;
-
-  border-radius: 10%;
+  /* border-radius: 10%; */
 }
 
-/* .contact .btn {
-    border-radius: 25%;
-    width: 20%;
-    font-size: 15px;
-    background-color: #f08080;
-    color: #ffffff;
-    padding: 20px;
- } */
+.contact .btn {
+  margin: 15px;
+  width: 20%;
+  font-size: 15px;
+  background-color: #f08080;
+  color: #ffffff;
+  padding: 20px;
+}
 
-/* .contact .btn:hover {
-    background-color: #a85959 !important;
-    color: #ffffff !important;
-    padding: 25px;
- } */
-
-.submit {
-  color: green;
+.contact .btn:hover {
+  background-color: #a85959 !important;
+  color: #ffffff !important;
 }
 
 /* Footer section */
@@ -143,4 +163,11 @@ i {
 .footer i {
   padding: 15px 10px;
   font-size: 30px;
+  color: black;
+}
+
+.footer i:hover {
+  padding: 15px 10px;
+  font-size: 30px;
+  color: gray;
 }
